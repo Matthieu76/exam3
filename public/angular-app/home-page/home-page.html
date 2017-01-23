@@ -1,0 +1,115 @@
+<div class="container">
+    <div class="section">
+        <div class="row">
+
+            <div class="carousel carousel-slider" data-indicators="true">
+                <div class="carousel-item" href="#details">
+                    <a href="#details"><img src="photos/hotel/danncarltonbelfort/1.jpg"></a>
+                </div>
+                <div class="carousel-item" href="#details">
+                    <a href="#details"><img src="photos/hotel/danncarltonbelfort/2.jpg"></a>
+                </div>
+                <div class="carousel-item" href="#details">
+                    <a href="#details"><img src="photos/hotel/danncarltonbelfort/3.jpg"></a>
+                </div>
+                <div class="carousel-item" href="#details">
+                    <a href="#details"><img src="photos/hotel/danncarltonbelfort/4.jpg"></a>
+                </div>
+                <div class="carousel-item" href="#details">
+                    <a href="#details"><img src="photos/hotel/danncarltonbelfort/5.jpg"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+
+            <div class="col s6">
+
+                <h4 class="center">Derniers Hotels</h4><br/>
+                <p ng-repeat="hotel in hc.hotels"><a ng-href="#/details/{{ hotel._id }}">{{hotel.name}}</a></p>
+
+            </div>
+
+            <div class="col s6">
+
+                <h4 class="center">Derniers commentaire</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+      $('.carousel.carousel-slider').carousel({full_width: true});
+</script>
+
+
+
+<!--
+<div id="mainWrapper" class="row">
+
+    <div class="col s4 z-depth-2" id="aside" ng-controller="zooListController as zl">
+
+        <div class="littleContainer">
+
+            <div class="section center">
+                <div class="row">
+                    <h5>Zoos membres ({{zl.zoos.length}})</h5><br/>
+                    <a href="#newzoo" class="waves-effect waves-light btn">
+                    <i class="material-icons left">note_add</i>Créez votre page</a>
+                </div>
+            </div>
+
+            <ul class="collection" ng-repeat="zoo in zl.zoos">
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red">pets</i>
+                    <span class="title">{{zoo.zooName}}</span>
+                    <p>{{zoo.zooPostalCode}} {{zoo.zooCity}}, {{zoo.zooCountry}}<br>
+                    {{zoo.zooWebsite}}
+                    </p>
+                    <a ng-href="#zoos/{{ zoo._id }}" class="secondary-content"><i class="material-icons launchIcon">launch</i></a>
+                </li>
+            </ul><br/>
+            
+        </div>
+
+    </div>
+
+	<div class="col s8" id="section" ng-controller="articleListController as al">
+
+		<div class="littleContainer">
+
+		    <div class="section">
+
+			    <div class="row">
+			        <a href="#newarticle" class="waves-effect waves-light btn">
+                    <i class="material-icons left">mode_edit</i>Nouvel article</a>
+			    </div>
+
+			    <ul class="collection" ng-repeat="article in al.articles">
+                    <li class="collection-item">
+                        <span class="articleTitre">{{article.articleTitle}}</span>
+                        <span class="articleContent right">16/12/2016</span>
+                    </li>
+                    <li class="collection-item">{{article.articleText}}</li>
+                    <li class="collection-item">
+                        <a><i class="material-icons coeur">favorite</i></a>
+                        <a><i class="material-icons chat right">question_answer</i></a>
+                    </li>
+                </ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+-->
+
+
+
+
+

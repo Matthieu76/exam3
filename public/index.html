@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="hoBook">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HoBook</title>
+
+  <!-- LINKS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize.min.css" />
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+    <header header></header>
+    <main ng-view></main>
+    <footer footer></footer>
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="angular-app/app.js"></script>
+
+<!-- CONTROLLERS -->
+<script type="text/javascript" src="angular-app/home-page/homeController.js"></script>
+<script type="text/javascript" src="angular-app/hotel-details/detailsController.js"></script>
+
+<!-- DIRECTIVES -->
+<script type="text/javascript" src="angular-app/common/headerDirective.js"></script>
+<script type="text/javascript" src="angular-app/common/footerDirective.js"></script>
+
+<!-- FACTORIES -->
+<script type="text/javascript" src="angular-app/hotel-factory/hotelFactory.js"></script>
+
+</body>
+</html>
+

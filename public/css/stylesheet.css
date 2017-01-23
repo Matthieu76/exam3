@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'klavika';
+    src: url('../fonts/klavika/klavika.woff2') format('woff2'),
+         url('../fonts/klavika/klavika.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: roboto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a {
+	color: #414141;
+	cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+	height: 64px;
+}
+
+div.nav-wrapper {
+	background-color: #414141;
+	height: 64px;
+}
+
+a.navBtn {
+	background-color: #FFC24A;
+}
+
+a.brand-logo {
+	font-family: klavika;
+	margin-left: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: klavika;
+}
+
+a.btn:hover, button.btn:hover {
+	background-color: #1E68AA;
+}
+
+a.backBtn {
+	background-color: #414141;
+}
+
+a.backBtn:hover {
+	background-color: #FFC24A;
+}
+
+button.btn {
+	background-color: #414141;
+}
+
+#reviewBox {
+    padding : 20px;
+    border: 1px solid #414141;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer.page-footer {
+	background-color: #414141;
+	margin: 0;
+	padding: 0;
+}
